@@ -1,0 +1,45 @@
+{
+  "name": "accusantiumid",
+  "version": "1.0.0",
+  "description": "Infer strong typings for commander options and action handlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsd",
+    "prepublish": "tsd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TerrillFriesen/accusantiumid.git"
+  },
+  "files": [
+    "esm.mjs",
+    "index.js",
+    "index.d.ts"
+  ],
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./esm.mjs"
+    },
+    "./esm.mjs": "./esm.mjs"
+  },
+  "types": "index.d.ts",
+  "tsd": {
+    "directory": "tests"
+  },
+  "author": "KoryBradtke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TerrillFriesen/accusantiumid.git/issues"
+  },
+  "peerDependencies": {
+    "commander": "10.0.x"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "tsd": "^0.22.0",
+    "typescript": "^4.7.4"
+  }
+}
